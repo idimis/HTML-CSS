@@ -34,13 +34,33 @@ nav ul {
 
 /* Check list link style */
 nav ul li a {
+    text-decoration: none; /* Removes the underline from all hyperlinks */
 
 }
 
-/* Make text bold on hover */
+nav ul li a {
+  color: black; /* Normal state */
+  text-decoration: none; /* Optional: Removes underline */
+}
+
+
+nav ul li a:visited {
+  color: black; /* Visited state */
+  text-decoration: none;
+}
+
+/* Make text bold on hover */ 
 nav ul li a:hover {
-  
+  color: black; /* Hover state */
+  text-decoration: none;
+  font-weight: bold;
 }
+
+nav ul li a:active {
+  color: black; /* Active state (when clicked) */
+  text-decoration: none;
+}
+  
 
 
 main {
@@ -50,6 +70,70 @@ main {
   margin-bottom: 88px;
 }
 
+main h1 {
+  /* workouts made exclusive for you!*/
+
+font-family: 'Mulish';
+font-style: 'normal';
+font-weight: 400;
+font-size: 48px;
+line-height: 150%;
+/* or 72px */
+text-transform: uppercase;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+margin-top: 22px;
+margin-bottom: 22px;
+
+}
+
+main h1 span {
+  color: rgba(137, 197, 204, 1);
+
+}
+
+main p {
+/* We create exclusive and unique workouts for you. Invest in your body and get much more performance and quality of life. */
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+/* or 26px */
+
+color: #7D7987;
+
+mix-blend-mode: normal;
+
+margin-top: 22px;
+margin-bottom: 42px;
+
+}
+
+main button {
+/* Button / Primary */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 14px 32px 15px;
+gap: 8px;
+
+/* Primary color
+
+Green
+*/
+background: #69B99D;
+border-radius: 4px;
+
+
+}
 /* Check margin and font styling */
 .text h1 {
   font-family: 'Mulish', sans-serif;
