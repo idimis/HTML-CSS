@@ -48,19 +48,36 @@ body {
     text-decoration: none;
   }
   
-    /* Search logo styling */
-    .navbar .search-logo img {
-    width: 20px;
-    height: 20px;
-    /* Removed the 'content' property, just use the src in HTML */
-    }
-
-    /* Cart logo styling */
-    .navbar img.shopcart {
-    width: 24px;
+  /* Search logo styling */
+  .search-wrapper {
+    position: relative;
+    flex-direction: row;
+    width: 200px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  .rectangle-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .materialsearch {
+    position: relative;
+    z-index: 2;
+    width: 40px;
     height: 24px;
-    /* Removed the 'content' property, just use the src in HTML */
-
+    margin-left: 4px; /* Adjust the positioning of the search icon */
+   
+  }
+  
+  /* Cart logo styling */
+  .navbar img.shopcart {
+    width: 50px;
+    height: 24px;
   }
   
   /* Middle Section Styling */
@@ -83,28 +100,26 @@ body {
   }
   
   .middle p.text-wrapper-6 {
-    font-size: 16px;
-    color: #e3d7ff;
-    max-width: 800px;
-    margin: 10px auto 0;
-  }
+        font-size: 16px;
+        color: #000000;  /* Change text color to black */
+        max-width: 800px;
+        margin: 10px auto 0;
+        line-height: 1.5; /* Optional: Adjust line height for better spacing */
+    }
+    
   
   /* Blah Blah Blah! Section */
   .div-wrapper {
     width: 96.4%;
     background-color: black;
-    padding: 40px; 
+    padding: 40px;
   }
   
   .div-wrapper .midparagraph {
     color: white;
     font-size: 24px;
     text-align: center;
-    font-style: italic; /* Make text italic */
-  }
-  
-  .div-wrapper .midparagraph {
-    content: " Blah blah blah!";
+    font-style: italic;
   }
   
   /* Reviews Section Styling */
