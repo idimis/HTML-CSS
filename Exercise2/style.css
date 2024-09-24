@@ -1,120 +1,150 @@
-/* Reset styles */
+/* General Page Styling */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0; /* Set a light gray background for the page */
-}
-
-/* Container for centering */
-.container {
-    max-width: 1200px; /* Set max width for the container */
-    margin: 0 auto; /* Center the container */
-}
-
-/* Navigation Bar */
-.navigation-bar {
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+    background-color: #e8e4f0;
+  }
+  
+  .page {
+    width: 100%;
+    height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    width: 100%;
+    background-color: #cba9f0;
+    display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
-    background: #8E8FFA; /* Light purple background */
-}
-
-.avatar {
-    border-radius: 50%;
-    width: 50px; /* Adjust size as necessary */
-}
-
-.menu {
-    display: flex;
-    gap: 20px; /* Space between menu items */
-}
-
-.menu a {
-    color: white;
-    text-decoration: none;
-}
-
-/* Search input */
-.search input {
-    padding: 5px;
-    border-radius: 5px;
-    border: none;
-}
-
-/* Cart icon */
-.cart-icon {
-    width: 30px; /* Adjust size as necessary */
-}
-
-/* About Us Section */
-.about-us-section {
-    background: #8E8FFA; /* Light purple background */
-    padding: 20px;
-    text-align: center;
-}
-
-.about-us-section h1 {
-    color: black;
-    font-size: 36px; /* Adjust size as necessary */
-    margin-bottom: 10px;
-}
-
-.about-text {
-    color: white;
-    font-size: 24px; /* Adjust size as necessary */
-}
-
-.description {
-    color: black;
-    font-size: 18px; /* Adjust size as necessary */
-}
-
-/* Separator Section */
-.separator-section {
-    position: relative;
-    text-align: center;
-    margin: 20px 0; /* Space above and below the section */
-}
-
-.separator {
-    width: 4cm; /* Set width */
-    height: 4px; /* Height of the line */
-    background: black;
-    margin: 0 auto; /* Centered */
-}
-
-.italic-text {
-    font-style: italic;
-}
-
-/* Reviews Section */
-.reviews-section {
-    background: #C780FA; /* Light purple background */
-    padding: 20px;
-    text-align: center;
-}
-
-.reviews-section h2 {
-    color: black;
-    font-size: 36px; /* Adjust size as necessary */
-}
-
-.review {
-    margin: 10px 0;
-    display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-.reviewer-image {
+    padding: 10px 20px;
+  }
+  
+  .navbar img.eclipse,
+  .navbar img.ellipse-1,
+  .navbar img.ellipse-29,
+  .navbar img.ellipse-30,
+  .navbar img.ellipse-31 {
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    width: 50px; /* Adjust size as necessary */
-    margin-right: 10px; /* Space between image and text */
-}
+  }
+  
+  .navbar .text-wrapper,
+  .navbar .text-wrapper-2,
+  .navbar .text-wrapper-3,
+  .navbar .text-wrapper-4 {
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .navbar .text-wrapper-3 {
+    text-decoration: none;
+  }
+  
+    /* Search logo styling */
+    .navbar .search-logo img {
+    width: 20px;
+    height: 20px;
+    /* Removed the 'content' property, just use the src in HTML */
+    }
 
-.review p {
-    max-width: 600px; /* Set a max width for review text */
-    color: black;
-    font-size: 18px; /* Adjust size as necessary */
-}
+    /* Cart logo styling */
+    .navbar img.shopcart {
+    width: 24px;
+    height: 24px;
+    /* Removed the 'content' property, just use the src in HTML */
+
+  }
+  
+  /* Middle Section Styling */
+  .middle {
+    background-color: #9d84d9;
+    width: 100%;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .middle .text-wrapper-5 {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .middle p.p {
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  .middle p.text-wrapper-6 {
+    font-size: 16px;
+    color: #e3d7ff;
+    max-width: 800px;
+    margin: 10px auto 0;
+  }
+  
+  /* Blah Blah Section */
+  .div-wrapper {
+    width: 96.4%;
+    background-color: black;
+    padding: 40px; /* Increased size by 1.5x */
+  }
+  
+  .div-wrapper .midparagraph {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    font-style: italic; /* Make text italic */
+  }
+  
+  .div-wrapper .midparagraph {
+    content: " Blah blah blah!";
+  }
+  
+  /* Reviews Section Styling */
+  .bottomreview {
+    background-color: #d0a0ff;
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .bottomreview .text-wrapper-7 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .review-1, .review-2, .review-3 {
+    display: inline-block;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    max-width: 300px;
+  }
+  
+  .review-1 img, .review-2 img, .review-3 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .text-wrapper-8, .text-wrapper-10, .text-wrapper-12 {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .text-wrapper-9, .text-wrapper-11, .text-wrapper-13 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
