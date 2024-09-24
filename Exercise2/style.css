@@ -1,4 +1,4 @@
-/* General Page Styling */
+/* Main Page Styling */
 body {
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ body {
     align-items: center;
   }
   
-  /* Navbar Styling */
+  /* Navigation Bar Styling */
   .navbar {
     width: 100%;
     background-color: #cba9f0;
@@ -89,11 +89,11 @@ body {
     margin: 10px auto 0;
   }
   
-  /* Blah Blah Section */
+  /* Blah Blah Blah! Section */
   .div-wrapper {
     width: 96.4%;
     background-color: black;
-    padding: 40px; /* Increased size by 1.5x */
+    padding: 40px; 
   }
   
   .div-wrapper .midparagraph {
