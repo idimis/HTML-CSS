@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* font-family: 'Mulish', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
+body {
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+
+  min-height: 100vh;
+}
+
+.page {
+  width: 1040px;
+  margin: 0px auto;
+  padding-top: 64px;
+}
+
+/* Check margin */
+nav {
+  font-family: 'Mulish', sans-serif;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Check list styling */
+nav ul {
+  display: flex;
+  gap: 48px;
+}
+
+/* Check list link style */
+nav ul li a {
+    text-decoration: none; /* Removes the underline from all hyperlinks */
+
+}
+
+nav ul li a {
+  color: black; /* Normal state */
+  text-decoration: none; /* Optional: Removes underline */
+}
+
+
+nav ul li a:visited {
+  color: black; /* Visited state */
+  text-decoration: none;
+}
+
+/* Make text bold on hover */ 
+nav ul li a:hover {
+  color: black; /* Hover state */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:active {
+  color: black; /* Active state (when clicked) */
+  text-decoration: none;
+}
+  
+
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 88px;
+}
+
+main h1 {
+  /* workouts made exclusive for you!*/
+
+font-family: 'Mulish';
+font-style: 'normal';
+font-weight: 400;
+font-size: 48px;
+line-height: 150%;
+/* or 72px */
+text-transform: uppercase;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+margin-top: 22px;
+margin-bottom: 22px;
+
+}
+
+main h1 span {
+  color: rgba(137, 197, 204, 1);
+
+}
+
+main p {
+/* We create exclusive and unique workouts for you. Invest in your body and get much more performance and quality of life. */
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+/* or 26px */
+
+color: #7D7987;
+
+mix-blend-mode: normal;
+
+margin-top: 22px;
+margin-bottom: 42px;
+
+}
+
+main button {
+/* Button / Primary */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 14px 32px 15px;
+gap: 8px;
+
+/* Primary color
+
+Green
+*/
+background: #69B99D;
+border-radius: 4px;
+
+
+}
+/* Check margin and font styling */
+.text h1 {
+  font-family: 'Mulish', sans-serif;
+}
+
+/* Check font styling */
+.text h1 span {
+}
+
+/* Check font styling */
+.text p {
+  font-family: 'Open Sans', sans-serif; 
+}
+
+/* Check font styling and make sure the button is rounded */
+.text button {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  gap: 8px;
+}
+
+/* Handle when user hover on the button */
+.text button:hover {
+}
+
+/* Check the text styling */
+footer {
+  font-family: 'Open Sans', sans-serif; 
+}
+
+/* Check the text styling */
+footer a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+#balls {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+

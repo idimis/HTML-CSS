@@ -1,0 +1,366 @@
+/* ==============================
+   Header and Main Styles
+   ============================== */
+   header {
+    background-color: #EDECFF; /* Updated background color */
+    padding: 10px;
+    margin-bottom: 0; /* Prevent margin collapse */
+}
+
+/* ==============================
+   Page Layout
+   ============================== */
+.page {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ==============================
+   Navigation Bar Styles
+   ============================== */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #EDECFF;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Add Lato font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif; /* Set Lato as the default font */
+}
+
+/* Search Wrapper Styles */
+.search-wrapper {
+    display: flex;
+    align-items: center; /* Center align items vertically */
+}
+
+.search-logo {
+    display: flex;
+    align-items: center; /* Center align items vertically */
+}
+
+.search {
+    width: 24px; /* Adjust size as necessary */
+    height: 24px; /* Adjust size as necessary */
+
+}
+
+.searchbar {
+    width: 200px; /* Adjust the width of the search bar as needed */
+    height: 36px; /* Set a consistent height */
+    padding: 8px; /* Optional: Add padding for better text placement */
+    font-size: 16px; /* Set font size for the search bar */
+}
+
+
+/* ==============================
+   Middle Section Styles
+   ============================== */
+.middle {
+    display: flex; /* Use flexbox to align items */
+    justify-content: space-between; /* Space out text and images */
+    align-items: flex-start; /* Align items to the start */
+    width: 100%; /* Use full width */
+    background-color: #EDECFF; /* Updated background color */
+    margin-top: 0; /* Prevent margin collapse */
+}
+
+
+
+.text-wrapper {
+    width: 60%; /* Width for the text section */
+}
+
+.big-text {
+    font-size: 50px; /* Set the size for the first text */
+    margin: 10px; /* Remove margin */
+    font-family: 'Kaisei Decol', serif;
+    margin-left: 40px;
+    
+}
+
+.medium-text {
+    font-size: 20px; /* Set the size for the second text */
+    margin: 10px; /* Remove margin */
+    font-family: 'Lato', sans-serif;
+    margin-left: 40px;
+
+}
+.submitarticle {
+    margin: 40px;
+}
+
+/* ==============================
+   Photo Placeholders Styles
+   ============================== */
+.photo-placeholders {
+    width: 50%; /* Set the width of the image section */
+    display: flex; /* Display images in a flex container */
+    justify-content: space-between; /* Space images evenly */
+    align-items: center; /* Center images vertically */
+}
+
+.photo-placeholders img {
+    width: 50%; /* Adjust size of images */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* ==============================
+   Popular Works Section Styles
+   ============================== */
+   .popular-works {
+    display: flex;
+    flex-wrap: wrap; /* Wrap the items if the screen is smaller */
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.work-item {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: row; /* Row layout to align image and text horizontally */
+    align-items: flex-start; /* Align items to the start */
+    flex: 1; /* Allow flexibility */
+    gap: 20px; /* Space between image and text */
+    text-align: left; /* Ensure text is aligned left */
+    max-width: 300px; /* Set a max-width to maintain layout */
+}
+
+.thumbnail {
+    width: 100px; /* Size of the thumbnail */
+    height: 100px;
+    border-radius: 50%; /* Keep the image round */
+    object-fit: cover;
+}
+
+.work-details {
+    display: flex; /* Use flex for inner details */
+    flex-direction: column; /* Stack title and location */
+}
+
+.work-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.work-location {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.categories-navbar{
+    font-size: 20px;
+    font-family: 'Kaisei Decol';
+}
+
+/* ==============================
+   Media Queries
+   ============================== */
+@media (max-width: 768px) {
+    .work-item {
+        flex-direction: column; /* Stack the image and text vertically on small screens */
+        text-align: center; /* Center-align on small screens */
+    }
+}
+
+/* ==============================
+   Categories Navbar Styles
+   ============================== */
+.categories-navbar {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    padding: 20px; /* Add some padding */
+    background-color: white; /* Add a background to make it visible */
+    z-index: 1; /* Ensure the navbar is on top of other content */
+    position: relative; /* Ensure it doesn't overlap */
+}
+
+/* ==============================
+   Content Section Styling
+   ============================== */
+   .content-section {
+    display: flex;
+    margin: 20px 0;
+    align-items: stretch; /* Ensure both sections stretch to the same height */
+    
+}
+
+/* Big Thumbnail Section */
+.big-thumbnail {
+    width: 60%;
+    padding-right: 10px; /* Reduced padding for closer spacing */
+    display: flex; /* Ensure flex layout for potential child elements */
+    justify-content: center; /* Center align content */
+    align-items: center; /* Center vertically */
+}
+
+/* Small thumbnail section */
+.small-thumbnails {
+    display: flex;
+    flex-direction: column;
+    width: 30%; /* Keep this width */
+    gap: 20px;
+    flex-grow: 1; /* Allow it to grow */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+/* Thumbnail and text layout */
+.thumbnail-content {
+    display: flex;
+    align-items: center; /* Center align items */
+    gap: 20px;
+    width: 100%; /* Ensure it takes the full width */
+    justify-content: center; /* Center content horizontally */
+}
+
+/* Styling for small thumbnails */
+.thumbnail-content img {
+    width: 180px; /* Increased width for better visibility (1.5x) */
+    height: 180px; /* Increased height for better visibility (1.5x) */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Thumbnail text styling */
+.thumbnail-text {
+    display: flex;
+    flex-direction: column;
+    align-items: justify; /* Center align text */
+    
+}
+
+.thumbnail-text h3 {
+    font-size: 18px; /* Keep balanced font size */
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: justify; /* Center text */
+}
+
+.thumbnail-text p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    text-align: justify; /* Center text */
+}
+
+
+/* ==============================
+   Submitted Articles Section Styles
+   ============================== */
+   .submitted-articles {
+    width: 100%;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+}
+
+.article-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.article-container.reverse {
+    flex-direction: row-reverse; /* For alternating article layout */
+}
+
+.article-image {
+    flex: 0 0 66.67%; /* Set to occupy 2/3 of the container */
+    max-width: 100%; /* Allow the image to take full width */
+}
+
+.article-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.article-content {
+    flex: 1; /* Allow text to take the remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.category {
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.body-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.read-more {
+    font-size: 14px;
+    color: #007bff;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Responsive for Smaller Screens */
+@media (max-width: 768px) {
+    .article-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .article-container.reverse {
+        flex-direction: column;
+    }
+
+    /* Adjustments for mobile view if needed */
+    .article-image {
+        flex: 1; /* Allow the image to take full width on small screens */
+    }
+}
+
+
+/* ==============================
+   Footer Styles
+   ============================== */
+.footer {
+    display: flex;
+    flex-direction: column; /* Stack the left section on top of the right */
+    padding: 20px;
+}
+
+.footer-left {
+    background-color: #d3c4e1; /* Calmer purple-gray background */
+    padding: 10px;
+    height: 50px;
+    font-size: 30px;
+    font-family: 'Kaisei Decol', Serif;
+    font-weight: bold; /* Make the text bold */
+}
+
+.footer-right {
+    background-color: #333; /* Keep the previous background color */
+    color: white; /* Ensure text is white for contrast */
+    padding: 10px;
+    text-align: right; /* Align text to the right */
+}
