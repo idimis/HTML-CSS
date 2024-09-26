@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Article Display</title>
   <link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
   <div class="page">
@@ -84,97 +85,186 @@
         <div>Natural</div>
       </div>
 
-      <!-- Content Section -->
+     <!-- Content Section -->
 <div class="content-section">
-    <div class="big-thumbnail">
-      <img src="./imgs/content/Featured.svg" alt="Big Thumbnail" />
-
-    </div>
     
-    <div class="small-thumbnails">
+  <div class="big-thumbnail">
+      <div class="thumbnail-tags">
+          <div class="travel-tag">
+          </div>
+      </div>
+      <img src="./imgs/content/Featured.svg" alt="Big Thumbnail" />
+  </div>
+  
+  <div class="small-thumbnails">
       <!-- Content 1 -->
       <div class="thumbnail-content">
-        <img src="./imgs/content/Content1.svg" alt="Small Thumbnail 1" />
-        <div class="thumbnail-text">
-          <h3>Pink stairs leading to the sky</h3>
-          <p>In my opinion, Ui/Ux design is the foundation of a product, its face and soul. You can create an infinitely high-quality heart, and organize the simulation of breathing, but we won’t fall in love with a product just because its heart beats [...]</p>
-        </div>
+          <img src="./imgs/content/Content1.svg" alt="Small Thumbnail 1" />
+          <div class="thumbnail-text">
+              <h3>Pink stairs leading to the sky</h3>
+              <!-- Article Info: Date and Contributors -->
+              <div class="article-info">
+                  <div class="date-info">
+                      <img src="./imgs/content/calendar.svg" alt="Calendar Icon" />
+                      <span>Apr 8, 2023</span>
+                  </div>
+                  <div class="contributor-info">
+                      <img src="./imgs/content/account.svg" alt="Contributor Icon" />
+                      <span>Maksym Ostrozhynskyy</span>
+                  </div>
+              </div>
+              <p>In my opinion, Ui/Ux design is the foundation of a product, its face and soul. You can create an infinitely high-quality heart, and organize the simulation of breathing, but we won’t fall in love with a product just because its heart beats [...]</p>
+          </div>
       </div>
       
       <!-- Content 2 -->
       <div class="thumbnail-content">
-        <img src="./imgs/content/Content2.svg" alt="Small Thumbnail 2" />
-        <div class="thumbnail-text">
-          <h3>Building on the corner of the sea</h3>
-          <p>Cognitive bias (also known as “cognitive illusion” or “cognitive distortion”) refers to errors in thinking that can lead to incorrect perception and decision-making. They are an inherent part of our psychology and can affect [...]</p>
-        </div>
+          <img src="./imgs/content/Content2.svg" alt="Small Thumbnail 2" />
+          <div class="thumbnail-text">
+              <h3>Building on the corner of the sea</h3>
+              <!-- Article Info: Date and Contributors -->
+              <div class="article-info">
+                  <div class="date-info">
+                      <img src="./imgs/content/calendar.svg" alt="Calendar Icon" />
+                      <span>Apr 8, 2023</span>
+                  </div>
+                  <div class="contributor-info">
+                      <img src="./imgs/content/account.svg" alt="Contributor Icon" />
+                      <span>Mike Yukhtenko</span>
+                  </div>
+              </div>
+              <p>Cognitive bias (also known as “cognitive illusion” or “cognitive distortion”) refers to errors in thinking that can lead to incorrect perception and decision-making. They are an inherent part of our psychology and can affect [...]</p>
+          </div>
       </div>
       
       <!-- Content 3 -->
       <div class="thumbnail-content">
-        <img src="./imgs/content/Content3.svg" alt="Small Thumbnail 3" />
-        <div class="thumbnail-text">
-          <h3>The color of the sun for breakfast</h3>
-          <p>As is commonly believed, this methodology places the user at the center of the world and focuses on their views and habits. In fact, the product’s actual growth revolves around the persona for which the system is built [...]</p>
-        </div>
+          <img src="./imgs/content/Content3.svg" alt="Small Thumbnail 3" />
+          <div class="thumbnail-text">
+              <h3>The color of the sun for breakfast</h3>
+              <!-- Article Info: Date and Contributors -->
+              <div class="article-info">
+                  <div class="date-info">
+                      <img src="./imgs/content/calendar.svg" alt="Calendar Icon" />
+                      <span>Apr 8, 2023</span>
+                  </div>
+                  <div class="contributor-info">
+                      <img src="./imgs/content/account.svg" alt="Contributor Icon" />
+                      <span>Estudio Bloom</span>
+                  </div>
+              </div>
+              <p>As is commonly believed, this methodology places the user at the center of the world and focuses on their views and habits. In fact, the product’s actual growth revolves around the persona for which the system is built [...]</p>
+          </div>
       </div>
-    </div>
   </div>
-  
+</div>
 
-  <!-- Submitted Articles Section -->
+
+<!-- Submitted Articles Section -->
 <div class="submitted-articles">
-    <h2>Submitted Articles</h2> <!-- Title added here -->
+  <h2>Submitted Articles</h2> <!-- Title added here -->
 
-    <div class="article-container">
-        <div class="article-image">
-            <img src="./imgs/article/articleimage1.svg" alt="Pyramid" />
-        </div>
-        <div class="article-content">
-            <p class="category">Category: For Beginners</p>
-            <h2 class="title">Design Process for Beginners</h2>
-            <p class="body-text">
-                In my opinion, Ui/Ux design is the foundation of a product, its face and soul. You can create an infinitely high-quality heart, and organize the simulation of breathing, but we won’t fall in love with a product just because its heart beats in an interesting rhythm or its breathing smells like mint.
-            </p>
-            <p class="read-more">Read More...</p>
-        </div>
-    </div>
+  <div class="article-container">
+      <div class="article-image">
+          <img src="./imgs/article/articleimage1.svg" alt="Pyramid" />
+      </div>
+      <div class="article-content">
+          <p class="category">Category: For Beginners</p>
+          <h2 class="title">Design Process for Beginners</h2>
+          <!-- Added new horizontal bar for date, comments, and contributors -->
+          <div class="article-meta">
+              <span class="date">
+                  <img src="./imgs/content/calendar.svg" alt="Calendar Icon" /> Apr 8, 2023
+              </span>
+              <span class="comments">
+                  <img src="./imgs/content/comments.svg" alt="Comments Icon" /> 4 comments
+              </span>
+              <span class="contributors">
+                  <img src="./imgs/content/account.svg" alt="Contributor Icon" /> Joshua Coleman
+              </span>
+          </div>
+          <p class="body-text">
+            In my opinion, Ui/Ux design is the foundation of a product, its face and soul. You can create an infinitely high-quality heart, and organize the simulation of breathing, but we won’t fall in love with a product just because its heart beats in an interesting rhythm or its breathing smells like mint.
 
-    <div class="article-container reverse">
-        <div class="article-image">
-            <img src="./imgs/article/articleimage2.svg" alt="Concrete" />
-        </div>
-        <div class="article-content">
-            <p class="category">Category: For Beginners</p>
-            <h2 class="title">User-centered design — a brief guide</h2>
-            <p class="body-text">
-                As is commonly believed, this methodology places the user at the center of the world and focuses on their views and habits. In fact, the product’s actual growth revolves around the persona for which the system is built.
-            </p>
-            <p class="read-more">Read More...</p>
-        </div>
-    </div>
+            Most of the information we perceive is through our eyes, which means that we see first and then think. Therefore, we must understand how to attract attention and process it in a way that the user performs the necessary actions [...]
+          </p>
+          <p class="read-more">Read More...</p>
+      </div>
+  </div>
 
-    <div class="article-container">
-        <div class="article-image">
-            <img src="./imgs/article/articleimage3.svg" alt="Oval" />
-        </div>
-        <div class="article-content">
-            <p class="category">Category: For Beginners</p>
-            <h2 class="title">Cognitive biases in UX design</h2>
-            <p class="body-text">
-                Cognitive bias (also known as “cognitive illusion” or “cognitive distortion”) refers to errors in thinking that can lead to incorrect perception and decision-making. They are an inherent part of our psychology and can affect our behavior, even if we are not aware of them.
-            </p>
-            <p class="read-more">Read More...</p>
-        </div>
-    </div>
+  <div class="article-container reverse">
+      <div class="article-image">
+          <img src="./imgs/article/articleimage2.svg" alt="Concrete" />
+      </div>
+      <div class="article-content">
+          <p class="category">Guides</p>
+          <h2 class="title">User-centered design — a brief guide</h2>
+          <!-- Added new horizontal bar for date, comments, and contributors -->
+          <div class="article-meta">
+              <span class="date">
+                  <img src="./imgs/content/calendar.svg" alt="Calendar Icon" /> Apr 8, 2023
+              </span>
+              <span class="comments">
+                  <img src="./imgs/content/comments.svg" alt="Comments Icon" /> 6 comments
+              </span>
+              <span class="contributors">
+                  <img src="./imgs/content/account.svg" alt="Contributor Icon" /> Ferdinand Stohr
+              </span>
+          </div>
+          <p class="body-text">
+            As is commonly believed, this methodology places the user at the center of the world and focuses on their views and habits. In fact, the product’s actual growth revolves around the persona for which the system is built.
+
+            The main difference is in the habits and atmosphere in which the user is accustomed to “brewing”; we do not try to restrict the user to achieve goals. Goals are achieved naturally, often not allowing for qualitative identification of opportunities and direct needs [...]
+          </p>
+          <p class="read-more">Read More...</p>
+      </div>
+  </div>
+
+  <div class="article-container">
+      <div class="article-image">
+          <img src="./imgs/article/articleimage3.svg" alt="Oval" />
+      </div>
+      <div class="article-content">
+          <p class="category">User Experience</p>
+          <h2 class="title">Cognitive biases in UX design</h2>
+          <!-- Added new horizontal bar for date, comments, and contributors -->
+          <div class="article-meta">
+              <span class="date">
+                  <img src="./imgs/content/calendar.svg" alt="Calendar Icon" /> Apr 8, 2023
+              </span>
+              <span class="comments">
+                  <img src="./imgs/content/comments.svg" alt="Comments Icon" /> 5 comments
+              </span>
+              <span class="contributors">
+                  <img src="./imgs/content/account.svg" alt="Contributor Icon" /> Maarten Deckers
+              </span>
+          </div>
+          <p class="body-text">
+            Cognitive bias (also known as “cognitive illusion” or “cognitive distortion”) refers to errors in thinking that can lead to incorrect perception and decision-making. They are an inherent part of our psychology and can affect our behavior, even if we are not aware of them.
+
+            In UX design, cognitive biases can influence how users interact with a product, the decisions they make, and the emotions the product elicits. Therefore, understanding cognitive biases is a key aspect of choosing and implementing an interactive approach both with users in general and with their personal perceptions [...]
+          </p>
+          <p class="read-more">Read More...</p>
+      </div>
+  </div>
 </div>
 
 
 
-    <!-- Footer -->
+<!-- Footer -->
 <footer class="footer">
-    <div class="footer-left">
-        Hello! If you have some questions, then you can just <span class="underline">write an email</span> to us ;)
-    </div>
-    <div class="footer-right">© 2023 Articler. Some rights reserved | Homepage | News | About Us | Contact</div>
+  <div class="footer-left">
+      Hello! If you have some questions, then you can just <span class="underline">write an email</span> to us ;)
+  </div>
+  <div class="footer-right">
+      <div class="footer-content">
+          <span>© 2023 Articler. Some rights reserved</span>
+          <div class="footer-links">
+              <a href="#">Homepage  | </a>
+              <a href="#">News  | </a>
+              <a href="#">About Us | </a>
+              <a href="#">Contact  </a>
+          </div>
+      </div>
+  </div>
 </footer>
